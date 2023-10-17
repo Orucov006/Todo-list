@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div id="action-box">
+                    <input type="text" placeholder="Add text">
+                    <button id="search"><i class="fas fa-search"></i></button>
+                    <button id="add"><i class="fas fa-plus"></i></button>
+                    <button id="trash"><i class="fas fa-trash"></i></button>
+                </div>
+                <div id="trashBox">
+                    <div class="d-flex">
+                        <h3>Trash</h3>
+                        <button id="close"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div id="boxes" class="j-between">
+                    <div id="willDo" class="box"></div>
+                    <div id="doing"  class="box"></div>
+                    <div id="done"   class="box"></div>
+                </div>
+            </main>
+        </div>    
+    </body>
+    <script src="https://kit.fontawesome.com/edff80f9e7.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</html>

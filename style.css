@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    width: 100%;
+    animation: changeBackgroundColor 15s infinite; 
+}
+@keyframes changeBackgroundColor {
+    0% { background-color: #001F3F; }
+    50% { background-color: #FF4136; }
+    100% { background-color: #001F3F; }
+}
+.container{
+    width: 90%;
+    margin:auto;
+}
+#action-box{
+    width: 95%;
+    margin: auto;
+    padding:15px;
+    background: #ffffff50;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+input, #action-box button{
+    width: 15%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius:8px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    background: transparent;
+}
+button{
+    background: transparent;
+    border: none;
+}
+input{width: 100%;}
+input::placeholder{color: #fff;}
+#boxes{
+    width: 100%;
+    margin: 10px auto;
+}
+.box{
+    background: #fff;
+    margin:10px;
+    border-radius:6px;
+    padding: 10px;
+}
+.box p , .box i{ margin: 5px; color: #333;}
+.box>div{
+    border-bottom: 1px solid #aaa;
+    padding:10px;
+}
+.t-center{text-align: center;}
+#trashBox{
+    background: #eee;
+    height:100%;
+    width: 40%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    padding: 10px;
+    transition:ease-in-out 2s;
+    display: none;
+    z-index: 1;
+}
+#end{text-align:end;}
+#close{ padding: 10px; }
+.active{
+    display: block !important;
+    right: 0 !important;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (min-width:768px) {
+    #action-box{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .j-between{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box{
+        width: 100%;
+        min-height: 40vh;
+    }
+    #trashBox{ width: 20%;}
+}
